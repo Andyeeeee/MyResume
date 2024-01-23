@@ -1,0 +1,36 @@
+#TitlePic{
+  background-color: rgba(255, 254, 173, 0.932);
+  // background-color: rgb(88, 170, 241);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .colck-box {
+    height: 200px;
+    width: 200px;
+    // background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+  }
+
+.title-box{
+  // width: 33%;
+  // background-color: blueviolet;
+}
+
+
+  .git{
+    background-color: blueviolet;
+    color: rgb(255, 253, 111);
+  }
+
+}
+
+@include sm{
+  .title-box{
+    width: 50% ;
+    // background-color: cadetblue;
+  }
+}

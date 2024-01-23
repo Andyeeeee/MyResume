@@ -1,0 +1,14 @@
+#MainFooter{
+  background-color: rgb(135, 135, 135);
+  text-align: center;
+  .v-row{
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .smile {
+    --v-icon-size-multiplier: 5 !important;
+  }
+  
+}

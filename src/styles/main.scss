@@ -1,0 +1,15 @@
+//變數
+@import '_variables.scss';
+//RWD
+@import 'mixins/rwd';
+//全域變數
+@import '_global.scss';
+//各區
+@import '_TitlePic.scss';
+@import '_MainContent.scss';
+@import '_Font.scss';
+@import '_AboutMe.scss';
+@import '_MainFooter.scss';
+@import '_MyProduct.scss';
+@import '_MySkill.scss';
+@import '_LearningProcess.scss'
