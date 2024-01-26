@@ -35,7 +35,7 @@
           </div>
           <img src="@/assets/JSS.png" alt="">
           <div>
-            CSS
+            JavaScript
           </div>
           <div>
 

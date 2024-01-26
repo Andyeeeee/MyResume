@@ -3,39 +3,46 @@
     <v-container>
       <h1>關於我</h1>
       <v-row class="align-center">
-        <v-col class="v-col-12 v-col-sm-6">
+        <v-col class="v-col-12 v-col-lg-6">
           <div>
 
             <img src="../assets/Me.jpg" class="me" alt="">
           </div>
         </v-col>
 
-        <v-col class="v-col-12 v-col-sm-6">
+        <v-col class="v-col-12 v-col-lg-6">
           <div class="text">
-            <v-table>
-              <tr>
+            <h2> 林駿丞</h2>
+            <!-- <div class="d-flex flex-column justify-sm-space-around justify-md-space-between">
 
-                <td colspan="2" class="text-center name">
-                  <h2>
+              <div>
+                <div>最高學位:大學</div>
+                <div>就讀學校:中華科技大學</div>
+                <div>就讀科系:食科系</div>
+                <div></div>
+              </div>
 
-                    姓名:林駿丞
-                  </h2>
-                </td>
+              <div>
+                <div>出生日:87.01.02</div>
+                <div>血型:B</div>
+                <div>兵役:役畢</div>
+              </div>
 
-              </tr>
-              <tr>
-                <td>最高學位:大學</td>
-                <td>出生日:87.01.02</td>
-              </tr>
-              <tr>
-                <td>就讀學校:中華科技大學</td>
-                <td>血型:B</td>
-              </tr>
-              <tr>
-                <td>就讀科系:食科系</td>
-                <td>兵役:役畢</td>
-              </tr>
-            </v-table>
+            </div> -->
+            <v-row>
+              <v-col class="v-col-12 v-col-sm-6">
+                <div>最高學位:大學</div>
+                <div>就讀學校:中華科技大學</div>
+                <div>就讀科系:食科系</div>
+                <div></div>
+              </v-col>
+              <v-col class="v-col-12 v-col-sm-6">
+                <div>出生日:87.01.02</div>
+                <div>血型:B</div>
+                <div>兵役:役畢</div>
+              </v-col>
+
+            </v-row>
 
             <br>
             <hr>
