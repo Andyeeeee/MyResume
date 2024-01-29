@@ -1,23 +1,62 @@
 #LearningProcess{
-  .w-80 > div {
-    flex:1
+  
+  ul,summary
+  {
+    list-style: none;
   }
-  // .LP-box-outside{
-  //   display: flex;
-  //   flex-wrap:wrap;   
-  //   flex-direction: column;
-  // }
-  // .LP-box-inside{
-  //   display: flex;  
-  //     align-items: center ;
-  //     text-align: center;
-  //     width: 80%;
-  //     justify-content: center
-  // }
-  // .LP-box-inside > div{
-  //   flex: 1
-  // }
-  img{
+
+  //卡片排版
+  .card-box>div {
+    text-align: center;
+    /* width: 500px; */
+    /* height: 200px; */
+    border: 1px solid black;
+  }
+  
+  // sm圖片大小
+  summary img{
+    width: 60%;
+    height: auto;
+  }
+  
+
+  // 圖片大小 sm以上
+
+
+  .pic{
+    position: relative;
+  }
+
+  .pic img{
     height: 120px;
   }
+
+
+  
+// hover捲動軸
+
+.inside-box-ul {
+  display: none;
+
+  position: absolute;
+  background-color: white;
+}
+
+.pic:hover .inside-box-ul {
+  display: block;
+}
+
+
+@include lg{
+  .card-box>div {
+    text-align: center;
+    /* width: 500px; */
+    /* height: 200px; */
+    border: 1px solid black;
+    background-image: url('../assets/Tree.png');
+    background-size: contain;
+    padding-left: 80px;
+  }
+  
+}
 }

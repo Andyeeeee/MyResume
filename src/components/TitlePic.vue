@@ -4,6 +4,9 @@
 
       <div class="d-none d-md-block title-box">
         <div v-html="weatherImage"></div>
+        <div class="MinT">
+          <samp v-text="minT"></samp><span> &#8451; </span>
+        </div>
       </div>
 
       <div class="clock-numbrt title-box">
@@ -11,7 +14,7 @@
           <img src="/src/assets/FooterMe.png" alt=""
             style="border-radius: 50%;width: 100%; border: 10px solid rgb(194, 35, 35);">
         </div>
-        <div id="time"></div>
+        <div>{{ currentTime }} </div>
       </div>
 
       <div class="d-none d-sm-block title-box">
@@ -53,6 +56,7 @@ import axios from 'axios';
 import { ref, onMounted } from 'vue';
 
 const weatherImage = ref('')
+const minT = ref(null)
 
 const weatherData = async () => {
   try {
@@ -63,25 +67,106 @@ const weatherData = async () => {
     console.log(weatherDescription);
     console.log(weathertime);
     weatherImage.value = changeImg(weatherDescription, weathertime);
+    minT.value = weather.data.records.location[0].weatherElement[2].time[0].parameter.parameterName
+    console.log(minT);
+    console.log("最低溫");
   } catch (error) {
     console.log('資料抓取失敗', error);
   }
 }
 
+
+//天氣function
 const changeImg = (weatherDescription, weathertime) => {
-  const raining = [...Array.from({ length: 7 }, (_, i) => i + 8), 30, 32, 38, 39];
+  // sun包括moon 用時間來判斷使用太陽還是月亮 如果圖形不包含太陽月亮就通用
+  const sun1 = 1
+  const sun2 = 24
+  const sun = [sun1, sun2]
+  console.log(sun);
+
+  const sunPartlyCloudy1 = [2, 3, 4]
+  const sunPartlyCloudy2 = [25, 26, 27]
+  const sunPartlyCloudy = sunPartlyCloudy1.concat(sunPartlyCloudy2)
+  console.log(sunPartlyCloudy);
+
+
+  const sunRining = [19, 20, 29, 31]
+  const sunRainingThunder1 = [33, 35]
+  const sunRainingThunderChange2 = [21, 22]
+  const sunRainingThunder = sunRainingThunder1.concat(sunRainingThunderChange2)
+  console.log(sunRainingThunder);
+
+
+  const cloudy1 = [5, 6, 7]
+  const cloudy2 = 28
+  const cloudy = cloudy1.concat(cloudy2)
+  console.log(cloudy);
+
+  const raining = [...Array.from({ length: 7 }, (_, i) => i + 8), 30, 32, 38, 39]
   console.log(raining);
-  if (raining.includes(parseInt(weatherDescription)) && weathertime.includes("18:00")) {
-    return `<img src="https://cdn-icons-png.flaticon.com/128/4814/4814268.png" alt="cloudy" />`
-  } else if (raining.includes(parseInt(weatherDescription))) {
-    return `<img src="https://cdn-icons-png.flaticon.com/128/1146/1146858.png" alt="cloudy" />`
+  //!?
+
+  const rainingThunder = [...Array.from({ length: 3 }, (_, i) => i + 15), 34, 36, 41]
+  const rainingSnow = [23, 37]
+  const snow = 42
+
+  console.log(weathertime);
+
+
+
+  //有太陽的白天天氣 18:00前  為白天   sun暫時代表太陽月亮
+  //圖示來源https://www.flaticon.com/search?word=weather
+  if (sun.includes(parseInt(weatherDescription)) && weathertime.includes("18:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/4814/4814268.png" alt="SunGoodWeather" />`
+  } else if (sunPartlyCloudy.includes(parseInt(weatherDescription)) && weathertime.includes("18:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="SunCloudy" />`
   }
-  return '';
+  else if (sunRining.includes(parseInt(weatherDescription)) && weatherDescription.includes("18:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="sunRining" />`
+  }
+  else if (sunRainingThunder.includes(parseInt(weatherDescription)) && weatherDescription.includes("18:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1163/1163734.png" alt="sunRainingThunder" />`
+  }
+
+  // 晚上------------------------
+
+  else if (sun.includes(parseInt(weatherDescription)) && weathertime.includes("6:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/239/239467.png" alt="MoonGoodWeather" />`
+  } else if (sunPartlyCloudy.includes(parseInt(weatherDescription)) && weathertime.includes("6:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1747/1747597.png" alt="moonCloudy" />`
+  }
+  else if (sunRining.includes(parseInt(weatherDescription)) && weatherDescription.includes("6:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/9755/9755258.png" alt="moonRining" />`
+  }
+  else if (sunRainingThunder.includes(parseInt(weatherDescription)) && weatherDescription.includes("6:00")) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/10596/10596380.png" alt="moonRainingThunder" />`
+  }
+
+  //不分白天晚上
+
+  else if (cloudy.includes(parseInt(weatherDescription))) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/6566/6566213.png" alt="cloudy" />`
+  }
+  else if (raining.includes(parseInt(weatherDescription))) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/4088/4088981.png" alt="raining" />`
+  }
+  else if (rainingThunder.includes(parseInt(weatherDescription))) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/3104/3104612.png" alt="rainingThunder" />`
+  }
+  else if (rainingSnow.includes(parseInt(weatherDescription))) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/984/984627.png" alt="rainingSnow" />`
+  }
+  else if (snow.includes(parseInt(weatherDescription))) {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1409/1409310.png" alt="snow" />`
+  } else {
+    return `<img src="https://cdn-icons-png.flaticon.com/128/1586/1586270.png" alt="weatherERROR" />`
+  }
+  // return '';
 }
 
 weatherData();
 
-/*----------------------------*/
+/*月曆----------------------------*/
 
 const currentTime = ref('');
 const monthOlympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -95,6 +180,7 @@ let next;
 let ctitle;
 let cyear;
 
+
 onMounted(() => {
   holder = document.getElementById("days");
   prev = document.getElementById("prev");
@@ -102,8 +188,10 @@ onMounted(() => {
   ctitle = document.getElementById("calendar-title");
   cyear = document.getElementById("calendar-year");
 
+  /*time*/
   setInterval(() => {
     const now = new Date();
+
     let hour = now.getHours();
     const minute = now.getMinutes();
     const second = now.getSeconds();
