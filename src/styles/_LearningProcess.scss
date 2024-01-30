@@ -51,19 +51,25 @@ background-color: rgb(80, 255, 103);
   .pic img{
     height: 120px;
   }
-
-
   
-// hover捲動軸
+  
+  
+  // hover捲動軸
+  
+  .inside-box-ul {
+    display: none;
+    
+    position: absolute;
+    background-color: white;
+  }
+  
+  .inside-box-ul li{
+    border: 2px solid rgb(221, 174, 17);
 
-.inside-box-ul {
-  display: none;
-
-  position: absolute;
-  background-color: white;
-}
+  }
 
 .pic:hover .inside-box-ul {
+  z-index: 1;
   display: block;
 }
 

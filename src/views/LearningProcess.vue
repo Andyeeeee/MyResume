@@ -9,38 +9,39 @@
 
         <div class="card-box">
 
-          <div>
 
-            <div>2023年3月</div>
+          <div v-for="(item, index) in items" :key="item.index">
+
+            <div>{{ item.time }}</div>
             <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
+            <div>{{ item.name }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
+                  <p>{{ item.text }}</p>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/css.png" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/position-Syringe">
+                      <a target="_blank" :href="item.firstlink">
 
-                        <img src="../assets/learning/syringe.png" alt="">
+                        <img :src="item.secondimg" alt="">
 
                       </a>
-                      <p>postion針筒</p>
+                      <p>{{ item.secondtext }}</p>
                     </li>
                     <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/position-bear/">
+                      <a target="_blank" :href="item.secondlinksecon">
 
-                        <img src="../assets/learning/bear.png" alt="">
+                        <img :src="item.secondeimgesecond" alt="">
 
                       </a>
-                      <p>postion針筒</p>
+                      <p>{{ item.secondtextsecond }}</p>
                     </li>
                   </ul>
                 </details>
@@ -49,42 +50,52 @@
                   <summary><img src="../assets/JSS.png" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/colck/">
+                      <a target="_blank" :href="item.thirdlink">
 
-                        <img src="../assets/learning/colock.png" alt="">
+                        <img :src="item.thirdimg" alt="">
 
                       </a>
-                      <p>時鐘</p>
+                      <p>{{ item.thirdtext }}</p>
                     </li>
                   </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+              <ul class="out-box-md-ul d-none d-md-flex" style="justify-content: space-around;">
                 <li class="pic"><img src="../assets/html2.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
+                      <li>
+                        <p>s</p>
+                        <p>{{ item.text }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="pic"><img src="../assets/css.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
+                      <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
+                        <p>{{ item.secondtext }}</p>
+                      </li>
+                      <li><a target="_blank" :href="item.secondlinksecon"></a>
+                        <img :src="item.secondeimgesecond" alt="">
+                        <p>{{ item.secondtextsecond }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="pic"><img src="../assets/JSS.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
+                      <li>
+                        <a target="_blank" :href="item.thirdlink">
+
+                          <img :src="item.thirdimg" alt="">
+
+                        </a>
+                        <p>{{ item.thirdtext }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -92,196 +103,45 @@
             </div>
 
           </div>
-
-          <div>
-
-            <div>2023年4月</div>
-            <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
-            <div class="out-box">
-              <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center sm-pic">
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/youtube-copy/">
-
-                        <img src="../assets/learning/youtabe.png" alt="">
-
-                      </a>
-                      <p>postion針筒</p>
-                    </li>
-
-                  </ul>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
-
-                        <img src="../assets/learning/calculator.png" alt="">
-
-                      </a>
-                      <p>時鐘</p>
-                    </li>
-                  </ul>
-                </details>
-              </div>
-              <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-          <div>
-
-            <div>2023年5月</div>
-            <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
-            <div class="out-box">
-              <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center sm-pic">
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/bookstrap/">
-
-                        <img src="../assets/Bootstrap.png" alt="">
-
-                      </a>
-                      <p>Bootstrap-RWD</p>
-                    </li>
-
-                  </ul>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
-
-                        <img src="../assets/learning/calculator.png" alt="">
-
-                      </a>
-                      <p>時鐘</p>
-                    </li>
-                  </ul>
-                </details>
-              </div>
-              <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-
-
 
         </div>
-
 
         <div class="card-box">
 
 
-          <div>
+          <div v-for="(item, index) in items2" :key="item.index">
 
-            <div>2023年6月</div>
+            <div>{{ item.time }}</div>
             <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
+            <div>{{ item.name }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
+                  <p>{{ item.text }}</p>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/css.png" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/restaurant-RWD/">
+                      <a target="_blank" :href="item.firstlink">
 
-                        <img src="../assets/learning/restaurant-RWD.png" alt="restaurant-RWD">
+                        <img :src="item.secondimg" alt="">
 
                       </a>
-                      <p>Bootstrap-RWD</p>
+                      <p>{{ item.secondtext }}</p>
                     </li>
+                    <li>
+                      <a target="_blank" :href="item.secondlinksecon">
 
+                        <img :src="item.secondeimgesecond" alt="">
+
+                      </a>
+                      <p>{{ item.secondtextsecond }}</p>
+                    </li>
                   </ul>
                 </details>
                 <details>
@@ -289,42 +149,52 @@
                   <summary><img src="../assets/JSS.png" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+                      <a target="_blank" :href="item.thirdlink">
 
-                        <img src="../assets/learning/calculator.png" alt="">
+                        <img :src="item.thirdimg" alt="">
 
                       </a>
-                      <p>時鐘</p>
+                      <p>{{ item.thirdtext }}</p>
                     </li>
                   </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+              <ul class="out-box-md-ul d-none d-md-flex" style="justify-content: space-around;">
                 <li class="pic"><img src="../assets/html2.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
+                      <li>
+                        <p>s</p>
+                        <p>{{ item.text }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="pic"><img src="../assets/css.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
+                      <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
+                        <p>{{ item.secondtext }}</p>
+                      </li>
+                      <li><a target="_blank" :href="item.secondlinksecon"></a>
+                        <img :src="item.secondeimgesecond" alt="">
+                        <p>{{ item.secondtextsecond }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="pic"><img src="../assets/JSS.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
+                      <li>
+                        <a target="_blank" :href="item.thirdlink">
+
+                          <img :src="item.thirdimg" alt="">
+
+                        </a>
+                        <p>{{ item.thirdtext }}</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -332,163 +202,8 @@
             </div>
 
           </div>
-
-
-          <div>
-
-            <div>2023年7月</div>
-            <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
-            <div class="out-box">
-              <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center sm-pic">
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <img src="../assets/Scss.png" alt="">
-                      <p>Scss</p>
-                    </li>
-
-                  </ul>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
-
-                        <img src="../assets/learning/calculator.png" alt="">
-
-                      </a>
-                      <p>時鐘</p>
-                    </li>
-                  </ul>
-                </details>
-              </div>
-              <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-
-          <div>
-
-            <div>2023年8月</div>
-            <div>3圖片</div>
-            <div>職訓局網頁前端實體課程</div>
-            <div class="out-box">
-              <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center sm-pic">
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>HTML基礎</p>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <img src="../assets/Scss.png" alt="">
-                      <p>Scss</p>
-                    </li>
-
-                  </ul>
-                </details>
-                <details>
-                  <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <ul class="sm-grab-img">
-                    <li>
-                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
-
-                        <img src="../assets/learning/calculator.png" alt="">
-
-                      </a>
-                      <p>時鐘</p>
-                    </li>
-                  </ul>
-                </details>
-              </div>
-              <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>132</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
-                  <div class="inside-box-ul">
-                    <ul class="bar">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-
-
 
         </div>
-
-
-
-
 
       </div>
 
@@ -498,4 +213,119 @@
 
   </div>
 </template>
-<style></style>
+
+<script setup>
+import { computed } from 'vue';
+
+const items = computed(() => {
+  return [
+    {
+      time: "2023年3月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: 'https://andyeeeee.github.io/position-Syringe',
+      secondimg: 'src/assets/learning/syringe.png',
+      secondtext: 'postion針筒',
+
+      secondlinksecon: 'https://andyeeeee.github.io/position-bear/',
+      secondeimgesecond: 'src/assets/learning/bear.png',
+      secondtextsecond: 'postion熊',
+
+      thirdlink: 'https://andyeeeee.github.io/colck/',
+      thirdimg: 'src/assets/learning/colock.png',
+      thirdtext: '時鐘',
+
+    },
+    {
+      time: "2023年4月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: 'https://andyeeeee.github.io/youtube-copy/',
+      secondimg: 'src/assets/learning/youtabe.png',
+      secondtext: '仿刻youtube',
+
+      thirdlink: 'https://andyeeeee.github.io/-calculator/',
+      thirdimg: 'src/assets/learning/calculator.png',
+      thirdtext: '計算機周邊功能',
+
+    },
+    {
+      time: "2023年5月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: 'https://andyeeeee.github.io/bookstrap/',
+      secondimg: 'src/assets/Bootstrap.png',
+      secondtext: 'Bootstrap-RWD',
+
+
+      thirdlink: 'https://andyeeeee.github.io/colck/',
+      thirdimg: 'src/assets/learning/colock.png',
+      thirdtext: '時鐘',
+
+    }
+  ]
+})
+
+const items2 = computed(() => {
+  return [
+    {
+      time: "2023年6月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: 'https://andyeeeee.github.io/restaurant-RWD/',
+      secondimg: 'src//assets/learning/restaurant-RWD.png',
+      secondtext: 'restaurant-RWD',
+
+
+      thirdlink: 'https://andyeeeee.github.io/colck/',
+      thirdimg: 'src/assets/learning/colock.png',
+      thirdtext: '時鐘',
+
+    },
+    {
+      time: "2023年7月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: '',
+      secondimg: 'src/assets/Scss.png',
+      secondtext: 'Scss目前沒有代表內容',
+
+
+      thirdlink: 'https://andyeeeee.github.io/colck/',
+      thirdimg: 'src/assets/learning/colock.png',
+      thirdtext: '時鐘',
+
+    },
+    {
+      time: "2023年8月",
+      title: '職訓局網頁前端實體課程',
+      text: '內文',
+
+
+      secondlink: 'https://andyeeeee.github.io/position-Syringe',
+      secondimg: 'src/assets/learning/syringe.png',
+      secondtext: 'postion針筒',
+
+      secondlinksecon: 'https://andyeeeee.github.io/position-bear/',
+      secondeimgesecond: 'src/assets/learning/bear.png',
+      secondtextsecond: 'postion熊',
+
+      thirdlink: 'https://andyeeeee.github.io/colck/',
+      thirdimg: 'src/assets/learning/colock.png',
+      thirdtext: '時鐘',
+
+    }
+  ]
+})
+
+</script>
