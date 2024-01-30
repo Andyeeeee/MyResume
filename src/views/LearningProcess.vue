@@ -9,8 +9,6 @@
 
         <div class="card-box">
 
-
-
           <div>
 
             <div>2023年3月</div>
@@ -18,7 +16,7 @@
             <div>職訓局網頁前端實體課程</div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center">
+              <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/html2.png" alt=""> </summary>
@@ -27,20 +25,192 @@
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/css.png" alt=""> </summary>
-                  <p>css基礎</p>
-                  <ul>
+                  <ul class="sm-grab-img">
                     <li>
-                      <a href="">
-                        <button style="width: 100px;height:80;background-color: brown;border-radius: 20%;">123</button>
-                        <p>23</p>
+                      <a target="_blank" href="https://andyeeeee.github.io/position-Syringe">
+
+                        <img src="../assets/learning/syringe.png" alt="">
+
                       </a>
+                      <p>postion針筒</p>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/position-bear/">
+
+                        <img src="../assets/learning/bear.png" alt="">
+
+                      </a>
+                      <p>postion針筒</p>
                     </li>
                   </ul>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <p>JavaScript基礎</p>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/colck/">
+
+                        <img src="../assets/learning/colock.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <!-- 大於sm使用這格 -->
+              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+                <li class="pic"><img src="../assets/html2.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>132</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/css.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/JSS.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div>
+
+            <div>2023年4月</div>
+            <div>3圖片</div>
+            <div>職訓局網頁前端實體課程</div>
+            <div class="out-box">
+              <!-- 小於sm使用這個 -->
+              <div class="d-sm-flex d-md-none text-center sm-pic">
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/html2.png" alt=""> </summary>
+                  <p>HTML基礎</p>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/youtube-copy/">
+
+                        <img src="../assets/learning/youtabe.png" alt="">
+
+                      </a>
+                      <p>postion針筒</p>
+                    </li>
+
+                  </ul>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+
+                        <img src="../assets/learning/calculator.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <!-- 大於sm使用這格 -->
+              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+                <li class="pic"><img src="../assets/html2.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>132</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/css.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/JSS.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div>
+
+            <div>2023年5月</div>
+            <div>3圖片</div>
+            <div>職訓局網頁前端實體課程</div>
+            <div class="out-box">
+              <!-- 小於sm使用這個 -->
+              <div class="d-sm-flex d-md-none text-center sm-pic">
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/html2.png" alt=""> </summary>
+                  <p>HTML基礎</p>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/bookstrap/">
+
+                        <img src="../assets/Bootstrap.png" alt="">
+
+                      </a>
+                      <p>Bootstrap-RWD</p>
+                    </li>
+
+                  </ul>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+
+                        <img src="../assets/learning/calculator.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
@@ -79,43 +249,64 @@
 
 
 
+
         </div>
+
+
         <div class="card-box">
 
 
           <div>
 
-            <div>2023年3月</div>
+            <div>2023年6月</div>
             <div>3圖片</div>
             <div>職訓局網頁前端實體課程</div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
-              <div class="d-sm-flex d-md-none text-center">
+              <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>123</p>
+                  <p>HTML基礎</p>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/css.png" alt=""> </summary>
-                  <p>css基礎</p>
-                  <p></p>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/restaurant-RWD/">
+
+                        <img src="../assets/learning/restaurant-RWD.png" alt="restaurant-RWD">
+
+                      </a>
+                      <p>Bootstrap-RWD</p>
+                    </li>
+
+                  </ul>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
                   <summary><img src="../assets/JSS.png" alt=""> </summary>
-                  <p>123</p>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+
+                        <img src="../assets/learning/calculator.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
-              <ul class="out-box-ul d-none d-md-flex">
+              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
                 <li class="pic"><img src="../assets/html2.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>1</li>
                       <li>1</li>
-                      <li>1</li>
+                      <li>132</li>
                     </ul>
                   </div>
                 </li>
@@ -128,7 +319,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="pic" style=";"><img src="../assets/JSS.png" alt="">
+                <li class="pic"><img src="../assets/JSS.png" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>1</li>
@@ -141,6 +332,155 @@
             </div>
 
           </div>
+
+
+          <div>
+
+            <div>2023年7月</div>
+            <div>3圖片</div>
+            <div>職訓局網頁前端實體課程</div>
+            <div class="out-box">
+              <!-- 小於sm使用這個 -->
+              <div class="d-sm-flex d-md-none text-center sm-pic">
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/html2.png" alt=""> </summary>
+                  <p>HTML基礎</p>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <img src="../assets/Scss.png" alt="">
+                      <p>Scss</p>
+                    </li>
+
+                  </ul>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+
+                        <img src="../assets/learning/calculator.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <!-- 大於sm使用這格 -->
+              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+                <li class="pic"><img src="../assets/html2.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>132</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/css.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/JSS.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <div>2023年8月</div>
+            <div>3圖片</div>
+            <div>職訓局網頁前端實體課程</div>
+            <div class="out-box">
+              <!-- 小於sm使用這個 -->
+              <div class="d-sm-flex d-md-none text-center sm-pic">
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/html2.png" alt=""> </summary>
+                  <p>HTML基礎</p>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <img src="../assets/Scss.png" alt="">
+                      <p>Scss</p>
+                    </li>
+
+                  </ul>
+                </details>
+                <details>
+                  <!-- summary捲動下方 點擊打開 -->
+                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <ul class="sm-grab-img">
+                    <li>
+                      <a target="_blank" href="https://andyeeeee.github.io/-calculator/">
+
+                        <img src="../assets/learning/calculator.png" alt="">
+
+                      </a>
+                      <p>時鐘</p>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <!-- 大於sm使用這格 -->
+              <ul class="out-box-ul d-none d-md-flex" style="justify-content: space-around;">
+                <li class="pic"><img src="../assets/html2.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>132</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/css.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="pic"><img src="../assets/JSS.png" alt="">
+                  <div class="inside-box-ul">
+                    <ul class="bar">
+                      <li>1</li>
+                      <li>1</li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
 
 
 
@@ -158,3 +498,4 @@
 
   </div>
 </template>
+<style></style>

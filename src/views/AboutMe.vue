@@ -5,9 +5,25 @@
       <v-row class="align-center">
         <v-col class="v-col-12 v-col-lg-6">
           <div>
-
             <img src="../assets/Me.jpg" class="me" alt="">
           </div>
+          <ul class="d-none d-lg-flex aboutme-resume" style="list-style: none;justify-content: space-around;">
+            <li>
+              <a href="https://pda.104.com.tw/profile/share/209ahYJytk3jlA6EYDVPWrL3pCu0RxC2">
+                <img src="../assets/aboutme/104.png" alt="104" title="104">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.cakeresume.com/10514f074">
+                <img src="../assets/aboutme/cakeresum.png" alt="cakeresume" title="cakeresume">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Andyeeeee">
+                <img src="../assets/aboutme/github.png" alt="github" title="github">
+              </a>
+            </li>
+          </ul>
         </v-col>
 
         <v-col class="v-col-12 v-col-lg-6">
@@ -76,8 +92,26 @@
 
     </v-container>
 
-    <div>我的相關連結(圖片+連結)(104履歷，cake履歷，github)</div>
-    <div>line qrcode</div>
+    <section class="d-lg-none" id="link">
+      <ul class="d-flex aboutme-resume " style="list-style: none;justify-content: space-around;">
+        <li>
+          <a href="https://pda.104.com.tw/profile/share/209ahYJytk3jlA6EYDVPWrL3pCu0RxC2">
+            <img src="../assets/aboutme/104.png" alt="104" title="104">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cakeresume.com/10514f074">
+            <img src="../assets/aboutme/cakeresum.png" alt="cakeresume" title="cakeresume">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Andyeeeee">
+            <img src="../assets/aboutme/github.png" alt="github" title="github">
+          </a>
+        </li>
+      </ul>
+    </section>
+
 
 
   </div>
