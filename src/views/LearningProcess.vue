@@ -1,11 +1,10 @@
 <template>
   <div id="LearningProcess">
-    <div class="d">html.css.javascript製作hover效果，效果內部選寫學習內容、我希望是以放入圖片的方式呈現</div>
     <v-container>
       <h1>學習歷程</h1>
-      <h1>這業主要選寫什麼時間學會了什麼，什麼時間做了什麼成品</h1>
 
       <div class="d-flex flex-column flex-md-row  justify-space-around ">
+
 
         <div class="card-box">
 
@@ -35,14 +34,7 @@
                       </a>
                       <p>{{ item.secondtext }}</p>
                     </li>
-                    <li>
-                      <a target="_blank" :href="item.secondlinksecon">
 
-                        <img :src="item.secondeimgesecond" alt="">
-
-                      </a>
-                      <p>{{ item.secondtextsecond }}</p>
-                    </li>
                   </ul>
                 </details>
                 <details>
@@ -78,10 +70,7 @@
                       <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
                         <p>{{ item.secondtext }}</p>
                       </li>
-                      <li><a target="_blank" :href="item.secondlinksecon"></a>
-                        <img :src="item.secondeimgesecond" alt="">
-                        <p>{{ item.secondtextsecond }}</p>
-                      </li>
+
                     </ul>
                   </div>
                 </li>
@@ -105,6 +94,7 @@
           </div>
 
         </div>
+
 
         <div class="card-box">
 
@@ -177,10 +167,7 @@
                       <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
                         <p>{{ item.secondtext }}</p>
                       </li>
-                      <li><a target="_blank" :href="item.secondlinksecon"></a>
-                        <img :src="item.secondeimgesecond" alt="">
-                        <p>{{ item.secondtextsecond }}</p>
-                      </li>
+
                     </ul>
                   </div>
                 </li>
@@ -225,13 +212,13 @@ const items = computed(() => {
       text: '內文',
 
 
-      secondlink: 'https://andyeeeee.github.io/position-Syringe',
-      secondimg: 'src/assets/learning/syringe.png',
-      secondtext: 'postion針筒',
+      secondlink: 'https://andyeeeee.github.io/position-bear/',
+      secondimg: 'src/assets/learning/bear.png',
+      secondtext: 'postion熊',
 
-      secondlinksecon: 'https://andyeeeee.github.io/position-bear/',
-      secondeimgesecond: 'src/assets/learning/bear.png',
-      secondtextsecond: 'postion熊',
+      secondlink: 'https://andyeeeee.github.io/position-bear/',
+      secondimg: 'src/assets/learning/bear.png',
+      secondtext: 'postion熊',
 
       thirdlink: 'https://andyeeeee.github.io/colck/',
       thirdimg: 'src/assets/learning/colock.png',
