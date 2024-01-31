@@ -5,12 +5,20 @@
     list-style: none;
   }
 
+
+  // 整體卡片
+  .card-box{
+    width: 80%;
+    margin: auto;
+  }
+
   //卡片排版
   .card-box>div {
     text-align: center;
     /* width: 500px; */
     /* height: 200px; */
     border: 1px solid black;
+    margin-bottom: 10%;
   }
 
   //卡片區域背景圖片
@@ -27,13 +35,13 @@ background-color: rgb(80, 255, 103);
   // sm圖片大小
   summary img{
     width: 60%;
-    height: auto;
+    // height: auto;
   }
   
   // summary捲動軸內層圖片
 
   .sm-grab-img {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   
   .sm-grab-img img {
@@ -78,10 +86,17 @@ background-color: rgb(80, 255, 103);
   details{
     width: 33%;
   }
+
+
   }
 
 
 @include lg{
+    // 整體卡片
+    .card-box{
+      width: auto;
+    }
+
   .card-box>div {
     text-align: center;
     /* width: 500px; */
