@@ -3,7 +3,7 @@
     <v-container>
       <h1>學習歷程</h1>
 
-      <div class="d-flex flex-column flex-md-row  justify-space-around ">
+      <div class="d-flex flex-column flex-md-row  justify-space-around main-box">
 
 
         <div class="card-box">
@@ -13,33 +13,42 @@
 
             <div>{{ item.time }}</div>
             <div>3圖片</div>
-            <div>{{ item.name }} </div>
+            <div>{{ item.title }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>{{ item.text }}</p>
+                  <summary><img :src="item.leftimg" alt=""> </summary>
+                  <ul>
+                    <li>
+                      <a :href="item.firstlink">
+                        <img :src="item.firstimg" alt="">
+                      </a>
+                      <img :src="item.onllyfirstimg" alt="">
+                    </li>
+                  </ul>
+                  <p>{{ item.firsttext }}</p>
+                  <p>{{ item.firstnull }}</p>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <summary><img :src="item.midimg" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" :href="item.firstlink">
-
+                      <a target="_blank" :href="item.secondlink">
                         <img :src="item.secondimg" alt="">
-
                       </a>
+                      <img :src="item.onlysecondimg" alt="">
                       <p>{{ item.secondtext }}</p>
+                      <p>{{ item.secondnull }}</p>
                     </li>
 
                   </ul>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <summary><img :src="item.rightimg" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
                       <a target="_blank" :href="item.thirdlink">
@@ -47,34 +56,44 @@
                         <img :src="item.thirdimg" alt="">
 
                       </a>
+                      <img :src="item.onlythirdimg" alt="">
                       <p>{{ item.thirdtext }}</p>
+                      <p>{{ item.thirdnull }}</p>
                     </li>
                   </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
               <ul class="out-box-md-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
+                <li class="pic"><img :src="item.leftimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <p>s</p>
-                        <p>{{ item.text }}</p>
+                        <a target="_blank" :href="item.firstlink">
+                          <img :src="item.firstlink" alt="">
+                        </a>
+                        <img :src="item.onllyfirstimg" alt="">
+                        <p>{{ item.firsttext }}</p>
+                        <p>{{ item.firstnull }}</p>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
+                <li class="pic"><img :src="item.midimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
+                      <li><a target="_blank" :href="item.secondlink">
+                          <img :src="item.secondimg" alt="">
+                        </a>
+                        <img :src="item.onlysecondimg" alt="">
                         <p>{{ item.secondtext }}</p>
+                        <p>{{ item.secondnull }}</p>
                       </li>
 
                     </ul>
                   </div>
                 </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
+                <li class="pic"><img :src="item.rightimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
@@ -83,7 +102,9 @@
                           <img :src="item.thirdimg" alt="">
 
                         </a>
+                        <img :src="item.onlythirdimg" alt="">
                         <p>{{ item.thirdtext }}</p>
+                        <p>{{ item.thirdnull }}</p>
                       </li>
                     </ul>
                   </div>
@@ -94,6 +115,8 @@
           </div>
 
         </div>
+
+
 
 
         <div class="card-box">
@@ -103,40 +126,42 @@
 
             <div>{{ item.time }}</div>
             <div>3圖片</div>
-            <div>{{ item.name }} </div>
+            <div>{{ item.title }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/html2.png" alt=""> </summary>
-                  <p>{{ item.text }}</p>
+                  <summary><img :src="item.leftimg" alt=""> </summary>
+                  <ul>
+                    <li>
+                      <a :href="item.firstlink">
+                        <img :src="item.firstimg" alt="">
+                      </a>
+                      <img :src="item.onllyfirstimg" alt="">
+                    </li>
+                  </ul>
+                  <p>{{ item.firsttext }}</p>
+                  <p>{{ item.firstnull }}</p>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/css.png" alt=""> </summary>
+                  <summary><img :src="item.midimg" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
-                      <a target="_blank" :href="item.firstlink">
-
+                      <a target="_blank" :href="item.secondlink">
                         <img :src="item.secondimg" alt="">
-
                       </a>
+                      <img :src="item.onlysecondimg" alt="">
                       <p>{{ item.secondtext }}</p>
+                      <p>{{ item.secondnull }}</p>
                     </li>
-                    <li>
-                      <a target="_blank" :href="item.secondlinksecon">
 
-                        <img :src="item.secondeimgesecond" alt="">
-
-                      </a>
-                      <p>{{ item.secondtextsecond }}</p>
-                    </li>
                   </ul>
                 </details>
                 <details>
                   <!-- summary捲動下方 點擊打開 -->
-                  <summary><img src="../assets/JSS.png" alt=""> </summary>
+                  <summary><img :src="item.rightimg" alt=""> </summary>
                   <ul class="sm-grab-img">
                     <li>
                       <a target="_blank" :href="item.thirdlink">
@@ -144,34 +169,44 @@
                         <img :src="item.thirdimg" alt="">
 
                       </a>
+                      <img :src="item.onlythirdimg" alt="">
                       <p>{{ item.thirdtext }}</p>
+                      <p>{{ item.thirdnull }}</p>
                     </li>
                   </ul>
                 </details>
               </div>
               <!-- 大於sm使用這格 -->
               <ul class="out-box-md-ul d-none d-md-flex" style="justify-content: space-around;">
-                <li class="pic"><img src="../assets/html2.png" alt="">
+                <li class="pic"><img :src="item.leftimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <p>s</p>
-                        <p>{{ item.text }}</p>
+                        <a target="_blank" :href="item.firstlink">
+                          <img :src="item.firstlink" alt="">
+                        </a>
+                        <img :src="item.onllyfirstimg" alt="">
+                        <p>{{ item.firsttext }}</p>
+                        <p>{{ item.firstnull }}</p>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li class="pic"><img src="../assets/css.png" alt="">
+                <li class="pic"><img :src="item.midimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li><a target="_blank" :href="item.secondlink"><img :src="item.secondimg" alt=""></a>
+                      <li><a target="_blank" :href="item.secondlink">
+                          <img :src="item.secondimg" alt="">
+                        </a>
+                        <img :src="item.onlysecondimg" alt="">
                         <p>{{ item.secondtext }}</p>
+                        <p>{{ item.secondnull }}</p>
                       </li>
 
                     </ul>
                   </div>
                 </li>
-                <li class="pic"><img src="../assets/JSS.png" alt="">
+                <li class="pic"><img :src="item.rightimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
@@ -180,7 +215,9 @@
                           <img :src="item.thirdimg" alt="">
 
                         </a>
+                        <img :src="item.onlythirdimg" alt="">
                         <p>{{ item.thirdtext }}</p>
+                        <p>{{ item.thirdnull }}</p>
                       </li>
                     </ul>
                   </div>
@@ -191,6 +228,12 @@
           </div>
 
         </div>
+
+
+
+
+
+
 
       </div>
 
@@ -209,12 +252,12 @@ const items = computed(() => {
     {
       time: "2023年3月",
       title: '職訓局網頁前端實體課程',
-      text: '內文',
 
+      leftimg: 'src/assets/html2.png',
+      midimg: 'src/assets/css.png',
+      rightimg: 'src/assets/JSS.png',
 
-      secondlink: 'https://andyeeeee.github.io/position-bear/',
-      secondimg: 'src/assets/learning/bear.png',
-      secondtext: 'postion熊',
+      firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/position-bear/',
       secondimg: 'src/assets/learning/bear.png',
@@ -228,32 +271,42 @@ const items = computed(() => {
     {
       time: "2023年4月",
       title: '職訓局網頁前端實體課程',
-      text: '內文',
 
+      leftimg: 'src/assets/html2.png',
+      midimg: 'src/assets/css.png',
+      rightimg: 'src/assets/JSS.png',
+
+      firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/youtube-copy/',
       secondimg: 'src/assets/learning/youtabe.png',
       secondtext: '仿刻youtube',
 
-      thirdlink: 'https://andyeeeee.github.io/-calculator/',
-      thirdimg: 'src/assets/learning/calculator.png',
-      thirdtext: '計算機周邊功能',
+      thirdlink: 'https://andyeeeee.github.io/FIGHT-mosquito/',
+      thirdimg: 'https://images.cakeresume.com/20RdA/10514f074/9cd2e7fb-1038-469a-bab9-a420319696a4.png',
+      thirdtext: 'jQuery',
 
     },
     {
       time: "2023年5月",
       title: '職訓局網頁前端實體課程',
-      text: '內文',
 
+
+      leftimg: 'src/assets/html2.png',
+      midimg: 'src/assets/css.png',
+      rightimg: 'src/assets/JSS.png',
+
+      firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/bookstrap/',
       secondimg: 'src/assets/Bootstrap.png',
       secondtext: 'Bootstrap-RWD',
 
 
-      thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: 'src/assets/learning/colock.png',
-      thirdtext: '時鐘',
+      thirdlink: '',
+      onlythirdimg: 'https://images.cakeresume.com/20RdA/10514f074/acee3368-5a45-4aba-a0bf-ecff0605b010.png',
+      thirdtext: 'node.js 串接api',
+      thirdnull: '(無超連結)'
 
     }
   ]
@@ -264,52 +317,66 @@ const items2 = computed(() => {
     {
       time: "2023年6月",
       title: '職訓局網頁前端實體課程',
-      text: '內文',
 
+      leftimg: 'src/assets/html2.png',
+      midimg: 'src/assets/css.png',
+      rightimg: 'src/assets/JSS.png',
+
+      firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/restaurant-RWD/',
       secondimg: 'src//assets/learning/restaurant-RWD.png',
       secondtext: 'restaurant-RWD',
 
 
-      thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: 'src/assets/learning/colock.png',
-      thirdtext: '時鐘',
+      thirdlink: 'https://andyeeeee.github.io/tomato/#/',
+      thirdimg: 'https://images.cakeresume.com/20RdA/10514f074/5c7774f2-3c63-47f6-8008-3609ce41ce18.png',
+      thirdtext: '番茄鐘',
 
     },
     {
       time: "2023年7月",
       title: '職訓局網頁前端實體課程',
-      text: '內文',
 
+      leftimg: 'src/assets/html2.png',
+      midimg: 'src/assets/css.png',
+      rightimg: 'src/assets/JSS.png',
+
+      firsttext: '',
 
       secondlink: '',
-      secondimg: 'src/assets/Scss.png',
-      secondtext: 'Scss目前沒有代表內容',
+      onlysecondimg: 'src/assets/Scss.png',
+      secondtext: '',
+      secondnull: '(無超連結)',
 
 
-      thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: 'src/assets/learning/colock.png',
-      thirdtext: '時鐘',
+      thirdlink: '',
+      onlythirdimg: 'src/assets/learning/Vue3.png',
+      thirdtext: 'Vue框架',
+      thirdnull: '(無超連結)'
 
     },
     {
       time: "2023年8月",
-      title: '職訓局網頁前端實體課程',
-      text: '內文',
+      title: '職訓局網頁前端實體課程(專題製作)',
 
+      leftimg: 'src/assets/learning/Scss.png',
+      midimg: 'src/assets/learning/Vue3.png',
+      rightimg: 'src/assets/learning/node.png',
 
-      secondlink: 'https://andyeeeee.github.io/position-Syringe',
-      secondimg: 'src/assets/learning/syringe.png',
-      secondtext: 'postion針筒',
+      firsttext: '',
 
-      secondlinksecon: 'https://andyeeeee.github.io/position-bear/',
-      secondeimgesecond: 'src/assets/learning/bear.png',
-      secondtextsecond: 'postion熊',
+      secondlink: '',
+      onlysecondimg: '',
+      secondtext: '',
 
-      thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: 'src/assets/learning/colock.png',
-      thirdtext: '時鐘',
+      secondlink: 'https://andyeeeee.github.io/vuetify-project1/#/',
+      secondimg: 'https://images.cakeresume.com/20RdA/10514f074/06cc4bc1-2c41-4f23-91b6-51f53c430a1c.png',
+      secondtext: '餐廳線上訂餐',
+
+      thirdlink: '',
+      thirdimg: '',
+      thirdtext: '',
 
     }
   ]

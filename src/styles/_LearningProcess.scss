@@ -93,7 +93,12 @@ background-color: rgb(80, 255, 103);
 
 @include lg{
     // 整體卡片
+    .main-box{
+      width: 100%;
+      margin: auto;
+    }
     .card-box{
+      width: 40%;
       width: auto;
     }
 
@@ -107,5 +112,11 @@ background-color: rgb(80, 255, 103);
     padding-left: 80px;
   }
   
+}
+@include xl{
+  .card-box{
+    width: 45% !important;
+    width: auto;
+  }
 }
 }
