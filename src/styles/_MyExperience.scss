@@ -1,0 +1,88 @@
+#MyExperience{
+  
+  ul,summary
+  {
+    list-style: none;
+  }
+
+  .date{
+    margin-bottom: 10px;
+  }
+
+  // 整體卡片
+  .card-box{
+    width: 80%;
+    margin: auto;
+  }
+
+  //卡片排版
+  .card-box>div {
+    text-align: center;
+    /* width: 500px; */
+    /* height: 200px; */
+    border: 1px solid black;
+    // margin-bottom: 10%;
+
+
+
+  }
+
+  .sm-pic{
+    // padding-left: 30px;
+  }
+
+  .sm-pic div:nth-child(1){
+    flex: 1;
+  }
+  .sm-pic div:nth-child(2){
+    flex: 2;
+    text-align: left;
+  }
+
+.sm-pic img{
+  width: 60px;
+}
+
+  
+  // 圖片大小 sm以上
+
+
+  .pic{
+    position: relative;
+  }
+
+  .pic img{
+    height: 120px;
+  }
+  
+
+
+@include lg{
+    // 整體卡片
+    .main-box{
+      width: 100%;
+      margin: auto;
+    }
+    .card-box{
+      // width: 40%;
+      // width: auto;
+    }
+
+  .card-box>div {
+    text-align: center;
+    /* width: 500px; */
+    /* height: 200px; */
+    border: 1px solid black;
+    // background-image: url('../assets/Tree.png');
+    // background-size: contain;
+    // padding-left: 80px;
+  }
+  
+}
+@include xl{
+  .card-box{
+    width: 45% !important;
+    width: auto;
+  }
+}
+}

@@ -58,6 +58,7 @@ background-color: rgb(80, 255, 103);
 
   .pic img{
     height: 120px;
+    width: 110px;
   }
   
   
@@ -98,7 +99,7 @@ background-color: rgb(80, 255, 103);
       margin: auto;
     }
     .card-box{
-      width: 40%;
+      // width: 40%;
       width: auto;
     }
 
@@ -111,7 +112,7 @@ background-color: rgb(80, 255, 103);
     background-size: contain;
     padding-left: 80px;
   }
-  
+
 }
 @include xl{
   .card-box{
