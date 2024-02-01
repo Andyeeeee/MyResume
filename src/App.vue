@@ -29,7 +29,7 @@
         <router-view>
 
         </router-view>
-        <MainFooter></MainFooter>
+        <MainFooter class="manfooter"></MainFooter>
       </v-main>
     </v-app>
   </div>

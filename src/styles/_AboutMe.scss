@@ -2,26 +2,29 @@
   h1{
     font-size:45px;
   }
-.me{
-  width: 100%;
-  border: 5px solid black;
-}
-h2{
-  text-align: center;
-font-size: 40px;
-margin-bottom: 10px;
-}
-.v-table{
-  background-color:rgba(255, 245, 238, 0);
-
-  font-size: 20px;
-  font-weight: bold;
-  font-style: italic;
-}
-.text{
-
-  // background-color: white;
-  border: 2px solid rgb(0, 79, 128);
+  .me{
+    width: 100%;
+    border: 4px solid rgb(29, 134, 220);
+    // border: 4px solid rgb(28, 119, 175);
+  }
+  h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .v-table{
+    background-color:rgba(255, 245, 238, 0);
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .text{
+    
+    // background-color: white;
+    // border: 4px solid rgb(28, 119, 175);
+    border: 4px solid rgb(29, 134, 220);
+  background-color: azure;
   // margin-bottom:5px ;
   font-size: 25px;
   font-weight: bold;

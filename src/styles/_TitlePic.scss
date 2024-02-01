@@ -1,19 +1,78 @@
-#TitlePic{
+#TitlePic{/*排版*/
+  .calendar {
+    width: 350px;
+    /* height: 350px; */
+    /* background: #ffffff00; */
+    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    /* border: #565656 1px solid; */
+  }
+  
+  .body-list ul {
+    width: 100%;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .body-list ul li {
+    width: 14.28%;
+    height: 36px;
+    line-height: 36px;
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+  }
+  
+  /*顏色*/
+  
+  .lightgrey {
+    color: #a8a8a8;
+    /*浅灰色*/
+  }
+  
+  .darkgrey {
+    color: #565656;
+    /*深灰色*/
+  }
+  
+  .green {
+    color: #2b66e2;
+    /*绿色*/
+  }
+  
+  .greenbox {
+    border: 1px solid #6ac13c;
+    background: #e9f8df;
+    /*浅绿色背景*/
+  }
+
   background-color: rgba(255, 254, 173, 0.932);
   // background-color: rgb(88, 170, 241);
   display: flex;
   flex-direction: column;
   text-align: center;
-  .colck-box {
+  .colck-box 
+  {
     height: 200px;
     width: 200px;
     // background-color: burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+
     margin: auto;
+  margin-top: 20px;
   }
+
+
+
+  .colck-box img{
+    border-radius: 50%;
+    width: 100%;
+     border: 4px solid #578cff
+  }
+
+
 
 .title-box{
   // width: 33%;
@@ -22,15 +81,21 @@
 
 
   .git{
-    background-color: blueviolet;
+    background-color: #2b66e2;
     color: rgb(255, 253, 111);
   }
 
-}
-
-@include sm{
-  .title-box{
-    width: 50% ;
-    // background-color: cadetblue;
+  
+  @include sm{
+    .title-box{
+      width: 50% ;
+      // background-color: cadetblue;
+    }
+    @include md{
+      .colck-box{
+        width: 250px;
+        height:  250px;
+      }
+    }
   }
 }

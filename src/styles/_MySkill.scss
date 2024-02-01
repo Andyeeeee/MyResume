@@ -1,11 +1,43 @@
 #MySkill{
+
+    h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(143, 215, 26);
+    margin: 0;
+    margin-bottom:20px ;
+    border-bottom: 3px solid black;
+  }
+
+  .top-h2{
+    margin-bottom: 0;
+  }
+  
   .v-row{
-    img{
-      height: 250px;
-      margin-top: 50px;
+    background-color: azure;
+    width: 90%;
+    margin: auto;
+    .img-box{
+      font-size: 15px;
+      font-weight: bold;
+      margin: 50px 0;
     }
+    img{
+      width: 150px;
+      }
     .v-col{
-      border: 1px solid black;
+      border: 2px solid black;
+      padding: 0
+    }
+    
+  }
+  .v-col p{
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+  }
+  @include md {
+    .v-row{
+      width: 75%;
     }
   }
 }

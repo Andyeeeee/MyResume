@@ -5,20 +5,42 @@
     list-style: none;
   }
 
+  h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(143, 215, 26);
+    border-bottom: 3px solid black;
+
+  }
+
+  .title{
+background-color: azure;
+font-size: 20px;
+font-weight: bold;
+}
+
+.out-box{
+  background-color: azure;
+    
+  }
 
   // 整體卡片
   .card-box{
     width: 80%;
     margin: auto;
   }
-
+  
   //卡片排版
   .card-box>div {
     text-align: center;
     /* width: 500px; */
     /* height: 200px; */
-    border: 1px solid black;
     margin-bottom: 10%;
+    border: 3px solid black;
+  }
+
+  details{
+    flex:1
   }
 
   //卡片區域背景圖片
@@ -58,7 +80,7 @@ background-color: rgb(80, 255, 103);
 
   .pic img{
     height: 120px;
-    width: 110px;
+    // width: 110px;
   }
   
   
@@ -70,6 +92,7 @@ background-color: rgb(80, 255, 103);
     
     position: absolute;
     background-color: white;
+    z-index: 1;
   }
   
   .inside-box-ul li{
@@ -85,7 +108,7 @@ background-color: rgb(80, 255, 103);
 @include sm{
   // sm圖片大小
   details{
-    width: 33%;
+float: 1;
   }
 
 
@@ -104,13 +127,13 @@ background-color: rgb(80, 255, 103);
     }
 
   .card-box>div {
-    text-align: center;
+    // text-align: center;
     /* width: 500px; */
     /* height: 200px; */
-    border: 1px solid black;
-    background-image: url('../assets/Tree.png');
-    background-size: contain;
-    padding-left: 80px;
+    border: 2px solid black;
+    // background-image: url('../assets/Tree.png');
+    // background-size: contain;
+    // padding-left: 80px;
   }
 
 }

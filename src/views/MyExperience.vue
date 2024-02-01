@@ -15,8 +15,8 @@
 
             <div class="out-box">
               <!-- 小於sm使用這個 -->
-              <div class="d-flex flex-column flex-sm-row  text-center align-center sm-pic">
-                <div>
+              <div class="d-flex flex-column flex-sm-row  text-center  sm-pic">
+                <div class="align-center">
                   <img :src="item.leftimg" alt="">
                   <!-- <div>{{ item.company }} </div> -->
                   <h3>{{ item.company }}</h3>
@@ -44,7 +44,6 @@
         </div>
 
 
-
         <div class="card-box">
 
 
@@ -54,18 +53,20 @@
 
             <div class="out-box">
               <!-- 小於sm使用這個 -->
-              <div class="d-flex flex-column flex-sm-row  text-center align-center sm-pic">
-                <div>
+              <div class="d-flex flex-column flex-sm-row  text-center  sm-pic">
+                <div class="align-center">
                   <img :src="item.leftimg" alt="">
                   <!-- <div>{{ item.company }} </div> -->
-                  <h4>{{ item.company }}</h4>
+                  <h3>{{ item.company }}</h3>
                 </div>
                 <div>
 
                   <ul>
                     <li>
                     </li>
-                    <li>{{ item.position }}</li>
+                    <li>
+                      <h3> {{ item.position }}</h3>
+                    </li>
                     <li>{{ item.skill1 }}</li>
                     <li>{{ item.skill2 }}</li>
                     <li>{{ item.skill3 }}</li>
@@ -79,6 +80,8 @@
           </div>
 
         </div>
+
+
 
 
 
@@ -119,15 +122,15 @@ const items = computed(() => {
       skill3: '負責處理客訴及行政文書處理',
     },
     {
-      time: "2023年3月",
+      time: "2021/8~2022/2",
 
-      leftimg: 'src/assets/html2.png',
-      company: '職訓局網頁前端實體課程',
+      leftimg: 'src/assets/Experience/windows.jpg',
+      company: '晶品窗簾',
 
-      position: '',
-      skill1: '3',
-      skill2: '',
-      skill3: '',
+      position: '業務',
+      skill1: '負責市場客源開發相關事宜',
+      skill2: '負責現場尺寸丈量及規劃',
+      skill3: '負責銷售客戶關係管理事宜',
     }
   ]
 })
@@ -135,71 +138,40 @@ const items = computed(() => {
 const items2 = computed(() => {
   return [
     {
-      time: "2023年6月",
-      title: '職訓局網頁前端實體課程',
+      time: "2022/3~2023/2",
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: 'src/assets/Experience/uber.png',
+      company: '優步',
 
-      firsttext: '',
-
-      secondlink: 'https://andyeeeee.github.io/restaurant-RWD/',
-      secondimg: 'src//assets/learning/restaurant-RWD.png',
-      secondtext: 'restaurant-RWD',
-
-
-      thirdlink: 'https://andyeeeee.github.io/tomato/#/',
-      thirdimg: 'https://images.cakeresume.com/20RdA/10514f074/5c7774f2-3c63-47f6-8008-3609ce41ce18.png',
-      thirdtext: '番茄鐘',
-
+      position: '外送員',
+      skill1: '負責將店家餐點送至客人手中',
+      skill2: '',
+      skill3: '',
     },
     {
-      time: "2023年7月",
-      title: '職訓局網頁前端實體課程',
+      time: "2022/3~2021/8",
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: 'src/assets/Experience/sutdent.png',
+      company: '職訓(非工作經歷)',
 
-      firsttext: '',
-
-      secondlink: '',
-      onlysecondimg: 'src/assets/Scss.png',
-      secondtext: '',
-      secondnull: '(無超連結)',
-
-
-      thirdlink: '',
-      onlythirdimg: 'src/assets/learning/Vue3.png',
-      thirdtext: 'Vue框架',
-      thirdnull: '(無超連結)'
-
+      position: '學員',
+      skill1: '學習網頁前端相關技術',
+      skill2: '',
+      skill3: '',
     },
     {
-      time: "2023年8月",
-      title: '職訓局網頁前端實體課程(專題製作)',
+      time: "2023/11~2023/12",
 
-      leftimg: 'src/assets/learning/Scss.png',
-      midimg: 'src/assets/learning/Vue3.png',
-      rightimg: 'src/assets/learning/node.png',
+      leftimg: 'src/assets/Experience/woek.png',
+      company: '喜福',
 
-      firsttext: '',
-
-      secondlink: '',
-      onlysecondimg: '',
-      secondtext: '',
-
-      secondlink: 'https://andyeeeee.github.io/vuetify-project1/#/',
-      secondimg: 'https://images.cakeresume.com/20RdA/10514f074/06cc4bc1-2c41-4f23-91b6-51f53c430a1c.png',
-      secondtext: '餐廳線上訂餐',
-
-      thirdlink: '',
-      thirdimg: '',
-      thirdtext: '',
-
+      position: '計時人員',
+      skill1: '協助分類床單',
+      skill2: '協助燙枕頭套並整理',
+      skill3: '',
     }
   ]
 })
+
 
 </script>

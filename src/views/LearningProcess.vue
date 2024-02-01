@@ -11,9 +11,8 @@
 
           <div v-for="(item, index) in items" :key="item.index">
 
-            <div>{{ item.time }}</div>
-            <div>3圖片</div>
-            <div>{{ item.title }} </div>
+            <h2>{{ item.time }}</h2>
+            <div class="title">{{ item.title }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
@@ -69,10 +68,15 @@
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <a target="_blank" :href="item.firstlink">
-                          <img :src="item.firstlink" alt="">
-                        </a>
-                        <img :src="item.onllyfirstimg" alt="">
+                        <template v-if="item.firstlink">
+                          <a target="_blank" :href="item.firstlink">
+                            <img :src="item.firstlink" alt="">
+                          </a>
+                        </template>
+                        <template else-if>
+
+                          <img :src="item.onllyfirstimg" alt="">
+                        </template>
                         <p>{{ item.firsttext }}</p>
                         <p>{{ item.firstnull }}</p>
                       </li>
@@ -82,10 +86,16 @@
                 <li class="pic"><img :src="item.midimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li><a target="_blank" :href="item.secondlink">
-                          <img :src="item.secondimg" alt="">
-                        </a>
-                        <img :src="item.onlysecondimg" alt="">
+                      <li>
+
+                        <template v-if="item.secondlink">
+                          <a target="_blank" :href="item.secondlink">
+                            <img :src="item.secondimg" alt="">
+                          </a>
+                        </template>
+                        <template v-else>
+                          <img :src="item.onlysecondimg" alt="">
+                        </template>
                         <p>{{ item.secondtext }}</p>
                         <p>{{ item.secondnull }}</p>
                       </li>
@@ -97,12 +107,17 @@
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <a target="_blank" :href="item.thirdlink">
+                        <template v-if="item.thirdlink">
+                          <a target="_blank" :href="item.thirdlink">
 
-                          <img :src="item.thirdimg" alt="">
+                            <img :src="item.thirdimg" alt="">
 
-                        </a>
-                        <img :src="item.onlythirdimg" alt="">
+                          </a>
+                        </template>
+                        <template v-else>
+
+                          <img :src="item.onlythirdimg" alt="">
+                        </template>
                         <p>{{ item.thirdtext }}</p>
                         <p>{{ item.thirdnull }}</p>
                       </li>
@@ -115,6 +130,7 @@
           </div>
 
         </div>
+
 
 
 
@@ -124,9 +140,8 @@
 
           <div v-for="(item, index) in items2" :key="item.index">
 
-            <div>{{ item.time }}</div>
-            <div>3圖片</div>
-            <div>{{ item.title }} </div>
+            <h2>{{ item.time }}</h2>
+            <div class="title">{{ item.title }} </div>
             <div class="out-box">
               <!-- 小於sm使用這個 -->
               <div class="d-sm-flex d-md-none text-center sm-pic">
@@ -182,10 +197,15 @@
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <a target="_blank" :href="item.firstlink">
-                          <img :src="item.firstlink" alt="">
-                        </a>
-                        <img :src="item.onllyfirstimg" alt="">
+                        <template v-if="item.firstlink">
+                          <a target="_blank" :href="item.firstlink">
+                            <img :src="item.firstlink" alt="">
+                          </a>
+                        </template>
+                        <template else-if>
+
+                          <img :src="item.onllyfirstimg" alt="">
+                        </template>
                         <p>{{ item.firsttext }}</p>
                         <p>{{ item.firstnull }}</p>
                       </li>
@@ -195,10 +215,16 @@
                 <li class="pic"><img :src="item.midimg" alt="">
                   <div class="inside-box-ul">
                     <ul class="bar">
-                      <li><a target="_blank" :href="item.secondlink">
-                          <img :src="item.secondimg" alt="">
-                        </a>
-                        <img :src="item.onlysecondimg" alt="">
+                      <li>
+
+                        <template v-if="item.secondlink">
+                          <a target="_blank" :href="item.secondlink">
+                            <img :src="item.secondimg" alt="">
+                          </a>
+                        </template>
+                        <template v-else>
+                          <img :src="item.onlysecondimg" alt="">
+                        </template>
                         <p>{{ item.secondtext }}</p>
                         <p>{{ item.secondnull }}</p>
                       </li>
@@ -210,12 +236,17 @@
                   <div class="inside-box-ul">
                     <ul class="bar">
                       <li>
-                        <a target="_blank" :href="item.thirdlink">
+                        <template v-if="item.thirdlink">
+                          <a target="_blank" :href="item.thirdlink">
 
-                          <img :src="item.thirdimg" alt="">
+                            <img :src="item.thirdimg" alt="">
 
-                        </a>
-                        <img :src="item.onlythirdimg" alt="">
+                          </a>
+                        </template>
+                        <template v-else>
+
+                          <img :src="item.onlythirdimg" alt="">
+                        </template>
                         <p>{{ item.thirdtext }}</p>
                         <p>{{ item.thirdnull }}</p>
                       </li>
@@ -228,7 +259,6 @@
           </div>
 
         </div>
-
 
 
 

@@ -6,7 +6,7 @@
   }
 
   .date{
-    margin-bottom: 10px;
+   border-bottom: 2px solid black;
   }
 
   // 整體卡片
@@ -20,22 +20,29 @@
     text-align: center;
     /* width: 500px; */
     /* height: 200px; */
-    border: 1px solid black;
-    // margin-bottom: 10%;
+    border: 2px solid black;
+    margin-bottom: 10%;
 
 
 
   }
 
-  .sm-pic{
-    // padding-left: 30px;
+  .card-box .date{
+    background-color: rgb(143, 215, 26);
   }
 
+
+
+//child(1)圖片區塊 child(2)文字
   .sm-pic div:nth-child(1){
+    padding-top: 15px;
+    background-color: rgb(227, 131, 62);
     flex: 2;
   }
   .sm-pic div:nth-child(2){
     flex: 3;
+    background-color: azure;
+    font-size: 20px;
     // text-align: left;
   }
 
@@ -52,7 +59,7 @@
   }
 
   .pic img{
-    height: 120px;
+    // height: 120px;
   }
   
 @include sm{
@@ -61,22 +68,38 @@
   }
 }
 
+@include md{
+  .sm-pic div:nth-child(2){
+font-size:15px;
+  }
+}
+
 @include lg{
     // 整體卡片
     .main-box{
-      width: 100%;
-      margin: auto;
+      // width: 100%;
+      // margin: auto;
     }
     .card-box{
       // width: 40%;
       // width: auto;
+      // border: 1px solid saddlebrown;
+    }
+    .sm-pic div:nth-child(1){
+  height: 120px;
+    }  
+    
+    img{
+      // width: 100px;
+      // height: 80px
     }
 
   .card-box>div {
-    text-align: center;
+    // text-align: center;
     /* width: 500px; */
     /* height: 200px; */
-    border: 1px solid black;
+    // border: 1px solid black;
+    // height: 130px;
     // background-image: url('../assets/Tree.png');
     // background-size: contain;
     // padding-left: 80px;
