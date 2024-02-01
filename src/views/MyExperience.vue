@@ -19,14 +19,16 @@
                 <div>
                   <img :src="item.leftimg" alt="">
                   <!-- <div>{{ item.company }} </div> -->
-                  <h4>{{ item.company }}</h4>
+                  <h3>{{ item.company }}</h3>
                 </div>
                 <div>
 
                   <ul>
                     <li>
                     </li>
-                    <li>{{ item.position }}</li>
+                    <li>
+                      <h3> {{ item.position }}</h3>
+                    </li>
                     <li>{{ item.skill1 }}</li>
                     <li>{{ item.skill2 }}</li>
                     <li>{{ item.skill3 }}</li>
@@ -95,26 +97,26 @@ import { computed } from 'vue';
 const items = computed(() => {
   return [
     {
-      time: "2023年3月",
+      time: "2019/7~2019/8",
 
       leftimg: 'src/assets/Experience/food.png',
       company: '福和生鮮',
 
-      position: '品管',
-      skill1: '1',
-      skill2: '1',
-      skill3: '1',
+      position: '品管(實習)',
+      skill1: '協助農藥殘留檢驗',
+      skill2: '協助流水線生產',
+      skill3: '',
     },
     {
-      time: "2023年3月",
+      time: "202/4~2021/8",
 
-      leftimg: 'src/assets/html2.png',
-      company: '職訓局網頁前端實體課程',
+      leftimg: 'src/assets/Experience/food2.jpg',
+      company: '宏遠國際餐飲',
 
-      position: '',
-      skill1: '2',
-      skill2: '2',
-      skill3: '',
+      position: '衛管',
+      skill1: '負責團膳食材檢驗與盤點',
+      skill2: '負責環境衛生管理相關事項',
+      skill3: '負責處理客訴及行政文書處理',
     },
     {
       time: "2023年3月",

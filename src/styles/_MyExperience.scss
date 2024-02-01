@@ -32,11 +32,11 @@
   }
 
   .sm-pic div:nth-child(1){
-    flex: 1;
+    flex: 2;
   }
   .sm-pic div:nth-child(2){
-    flex: 2;
-    text-align: left;
+    flex: 3;
+    // text-align: left;
   }
 
 .sm-pic img{
@@ -55,7 +55,11 @@
     height: 120px;
   }
   
-
+@include sm{
+  .sm-pic div:nth-child(2){
+    text-align: left;
+  }
+}
 
 @include lg{
     // 整體卡片
