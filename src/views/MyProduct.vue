@@ -23,7 +23,7 @@
         <h2>訓後作品</h2>
         <v-row>
           <v-col class="v-col-12 v-col-sm-6 v-col-md-4 text-center" v-for="item in items2" :key="item.href">
-            <v-btn :style="{ 'background-image': `url(${item.image})` }" :href="item.href" target="_blank"
+            <v-btn :style="{ 'background-image': `url(${require(item.image)})` }" :href="item.href" target="_blank"
               :title="item.title" :icon="item.icon"
               style="width: 100%;height: 280px;    background-position: center; background-size: cover;">
             </v-btn>
@@ -51,7 +51,7 @@ const items = computed(() => {
 
 const items2 = computed(() => {
   return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: '@/assets/product/product.png', title: '個人履歷', text: '個人履歷' }
+    { href: 'https://andyeeeee.github.io/MyResume/', image: require('@/assets/product/product.png'), title: '個人履歷', text: '個人履歷' }
   ]
 })
 </script>
