@@ -329,7 +329,7 @@ const items = computed(() => {
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/bookstrap/',
-      secondimg: 'src/assets/Bootstrap.png',
+      secondimg: 'src/assets/BOOTSTRAP.png',
       secondtext: 'Bootstrap-RWD',
 
 
