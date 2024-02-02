@@ -35,7 +35,7 @@
                 <li>四</li>
                 <li>五</li>
                 <li>六</li>
-                <li>日</li>
+                <li>日.</li>
               </ul>
             </div>
             <div class="darkgrey body-list">
