@@ -285,7 +285,7 @@ const items = computed(() => {
 
       leftimg: new URL('../assets/html2.png', import.meta.url).href,
       midimg: new URL('../assets/css.png', import.meta.url).href,
-      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
+      rightimg: new URL('../assets/JSS.png', import.meta.url).href,
 
       firsttext: '',
 
@@ -294,7 +294,7 @@ const items = computed(() => {
       secondtext: 'postion熊',
 
       thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: new URL('../assets/learning/colock.png'),
+      thirdimg: new URL('../assets/learning/colock.png', import.meta.url).href,
       thirdtext: '時鐘',
 
     },
@@ -304,12 +304,11 @@ const items = computed(() => {
 
       leftimg: new URL('../assets/html2.png', import.meta.url).href,
       midimg: new URL('../assets/css.png', import.meta.url).href,
-      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
-
+      rightimg: new URL('../assets/JSS.png', import.meta.url).href,
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/youtube-copy/',
-      secondimg: new URL('../assets/learning/youtabe.png'),
+      secondimg: new URL('../assets/learning/youtabe.png', import.meta.url).href,
       secondtext: '仿刻youtube',
 
       thirdlink: 'https://andyeeeee.github.io/FIGHT-mosquito/',
@@ -324,8 +323,7 @@ const items = computed(() => {
 
       leftimg: new URL('../assets/html2.png', import.meta.url).href,
       midimg: new URL('../assets/css.png', import.meta.url).href,
-      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
-
+      rightimg: new URL('../assets/JSS.png', import.meta.url).href,
       firsttext: '',
 
       secondlink: new URL('../assets/learning/Bootstrap.png', import.meta.url).href,
@@ -350,8 +348,7 @@ const items2 = computed(() => {
 
       leftimg: new URL('../assets/html2.png', import.meta.url).href,
       midimg: new URL('../assets/css.png', import.meta.url).href,
-      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
-
+      rightimg: new URL('../assets/JSS.png', import.meta.url).href,
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/restaurant-RWD/',
@@ -369,8 +366,7 @@ const items2 = computed(() => {
       title: '職訓局網頁前端實體課程',
       leftimg: new URL('../assets/html2.png', import.meta.url).href,
       midimg: new URL('../assets/css.png', import.meta.url).href,
-      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
-
+      rightimg: new URL('../assets/JSS.png', import.meta.url).href,
       firsttext: '',
 
       secondlink: '',
