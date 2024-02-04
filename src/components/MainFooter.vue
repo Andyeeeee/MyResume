@@ -10,7 +10,7 @@
         <v-icon icon="mdi-emoticon-outline" class="smile"></v-icon>
 
       </v-col>
-      <v-col class="v-col-12 v-col-sm-4">
+      <v-col class="right-box v-col-12 v-col-sm-4">
         <div><v-icon icon="mdi-email-edit-outline" />信箱:<span id="gmailURL">10514f074@gmail.com</span>
           <button @click="copyGmail"><v-icon icon="mdi-content-copy"></v-icon></button>
         </div>

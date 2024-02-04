@@ -283,9 +283,9 @@ const items = computed(() => {
       time: "2023年3月",
       title: '職訓局網頁前端實體課程',
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: new URL('../assets/html2.png', import.meta.url).href,
+      midimg: new URL('../assets/css.png', import.meta.url).href,
+      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
 
       firsttext: '',
 
@@ -302,9 +302,9 @@ const items = computed(() => {
       time: "2023年4月",
       title: '職訓局網頁前端實體課程',
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: new URL('../assets/html2.png', import.meta.url).href,
+      midimg: new URL('../assets/css.png', import.meta.url).href,
+      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
 
       firsttext: '',
 
@@ -322,14 +322,14 @@ const items = computed(() => {
       title: '職訓局網頁前端實體課程',
 
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: new URL('../assets/html2.png', import.meta.url).href,
+      midimg: new URL('../assets/css.png', import.meta.url).href,
+      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
 
       firsttext: '',
 
-      secondlink: 'https://andyeeeee.github.io/bookstrap/',
-      secondimg: 'src/assets/BOOTSTRAP.png',
+      secondlink: new URL('../assets/learning/Bootstrap.png', import.meta.url).href,
+      secondimg: new URL('../assets/learning/Bootstrap.png', import.meta.url).href,
       secondtext: 'Bootstrap-RWD',
 
 
@@ -348,9 +348,9 @@ const items2 = computed(() => {
       time: "2023年6月",
       title: '職訓局網頁前端實體課程',
 
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: new URL('../assets/html2.png', import.meta.url).href,
+      midimg: new URL('../assets/css.png', import.meta.url).href,
+      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
 
       firsttext: '',
 
@@ -367,21 +367,20 @@ const items2 = computed(() => {
     {
       time: "2023年7月",
       title: '職訓局網頁前端實體課程',
-
-      leftimg: 'src/assets/html2.png',
-      midimg: 'src/assets/css.png',
-      rightimg: 'src/assets/JSS.png',
+      leftimg: new URL('../assets/html2.png', import.meta.url).href,
+      midimg: new URL('../assets/css.png', import.meta.url).href,
+      rightimg: new URL('../assets/JS2.png', import.meta.url).href,
 
       firsttext: '',
 
       secondlink: '',
-      onlysecondimg: 'src/assets/Scss.png',
+      onlysecondimg: new URL('../assets/learning/Scss.png', import.meta.url).href,
       secondtext: '',
       secondnull: '(無超連結)',
 
 
       thirdlink: '',
-      onlythirdimg: 'src/assets/learning/Vue3.png',
+      onlythirdimg: new URL('../assets/learning/Vue3.png', import.meta.url).href,
       thirdtext: 'Vue框架',
       thirdnull: '(無超連結)'
 
@@ -390,9 +389,9 @@ const items2 = computed(() => {
       time: "2023年8月",
       title: '職訓局網頁前端實體課程(專題製作)',
 
-      leftimg: 'src/assets/learning/Scss.png',
-      midimg: 'src/assets/learning/Vue3.png',
-      rightimg: 'src/assets/learning/node.png',
+      leftimg: new URL('../assets/learning/Scss.png', import.meta.url).href,
+      midimg: new URL('../assets/learning/Vue3.png', import.meta.url).href,
+      rightimg: new URL('../assets//learning/node.png', import.meta.url).href,
 
       firsttext: '',
 

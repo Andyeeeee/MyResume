@@ -4,12 +4,12 @@
       <!-- <TtryrRr></TtryrRr> -->
       <v-navigation-drawer v-if="ismobile" v-model="drawer" location="right" temporary>
         <v-list v-for="item in  items " :key="item.to">
-          <v-list-item :to="item.to" :prepend-icon="item.icon" :title="item.title"></v-list-item>
+          <v-list-item :to="item.to" :prepend-icon="item.icon" :title="item.title" :active="false"></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
       <v-app-bar>
-        <v-btn to="/">
+        <v-btn to="/" :active="false">
           <v-app-bar-title>
             首頁
           </v-app-bar-title>
@@ -17,11 +17,11 @@
         <v-spacer />
         <v-app-bar-nav-icon v-if="ismobile" @click="drawer = true" />
         <template v-if="!ismobile">
-          <v-btn to='/aboutme'>關於我</v-btn>
-          <v-btn to='/myproduct'>我的作品</v-btn>
-          <v-btn to='/myskill'>我的能力</v-btn>
-          <v-btn to='/learningprocess'>學習歷程</v-btn>
-          <v-btn to='/myexperience'>我的經歷</v-btn>
+          <v-btn :active="false" to='/aboutme'>關於我</v-btn>
+          <v-btn :active="false" to='/myproduct'>我的作品</v-btn>
+          <v-btn :active="false" to='/myskill'>我的能力</v-btn>
+          <v-btn :active="false" to='/learningprocess'>學習歷程</v-btn>
+          <v-btn :active="false" to='/myexperience'>我的經歷</v-btn>
         </template>
       </v-app-bar>
       <v-main>

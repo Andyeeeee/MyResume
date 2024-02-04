@@ -52,6 +52,12 @@
 //   font-weight: bold;
 //   font-style: italic;
 // }
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
 @include sm{
   h2{
     // font-size: 20px;
