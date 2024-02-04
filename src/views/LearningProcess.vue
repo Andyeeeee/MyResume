@@ -290,11 +290,11 @@ const items = computed(() => {
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/position-bear/',
-      secondimg: 'src/assets/learning/bear.png',
+      secondimg: new URL('../assets/learning/bear.png', import.meta.url).href,
       secondtext: 'postion熊',
 
       thirdlink: 'https://andyeeeee.github.io/colck/',
-      thirdimg: 'src/assets/learning/colock.png',
+      thirdimg: new URL('../assets/learning/colock.png'),
       thirdtext: '時鐘',
 
     },
@@ -309,7 +309,7 @@ const items = computed(() => {
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/youtube-copy/',
-      secondimg: 'src/assets/learning/youtabe.png',
+      secondimg: new URL('../assets/learning/youtabe.png'),
       secondtext: '仿刻youtube',
 
       thirdlink: 'https://andyeeeee.github.io/FIGHT-mosquito/',
@@ -355,7 +355,7 @@ const items2 = computed(() => {
       firsttext: '',
 
       secondlink: 'https://andyeeeee.github.io/restaurant-RWD/',
-      secondimg: 'src//assets/learning/restaurant-RWD.png',
+      secondimg: new URL('../assets/learning/restaurant-RWD.png', import.meta.url).href,
       secondtext: 'restaurant-RWD',
 
 
