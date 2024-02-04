@@ -38,9 +38,10 @@
         <h2>訓後作品</h2>
         <v-row>
           <v-col class="v-col-12 v-col-sm-6 v-col-md-4 text-center" v-for="item in items3" :key="item.href">
-            <v-btn :style="{ 'background-image': `url('${(item.image)}'')` }" :href="item.href" target="_blank"
+            <v-btn :style="{ 'background-image': `url(${(item.image)})` }" :href="item.href" target="_blank"
               :title="item.title" :icon="item.icon"
               style="width: 100%;height: 280px;    background-position: center; background-size: cover;">
+              <img :src="item.image">
             </v-btn>
             <br>
             <p>{{ item.text }}</p>
@@ -52,7 +53,7 @@
 </template>
 <script setup>
 import { computed } from 'vue';
-import asd from '@/assets/learning/bear.png'
+
 
 const items = computed(() => {
   return [
