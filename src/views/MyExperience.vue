@@ -157,8 +157,8 @@ const items2 = computed(() => {
 
       position: '學員',
       skill1: '學習網頁前端相關技術',
-      skill2: '',
-      skill3: '',
+      skill2: 'HTML,CSS,JavaScript',
+      skill3: 'MongoDB,Node.js',
     },
     {
       time: "2023/11~2023/12",

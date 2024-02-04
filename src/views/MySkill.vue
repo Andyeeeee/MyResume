@@ -77,6 +77,13 @@
             </div>
           </div>
 
+          <div class="img-box">
+            <div>
+              <img src="../assets/learning/node.png" alt="">
+              <div>nod.js</div>
+            </div>
+          </div>
+
         </v-col>
         <v-col class="v-col-12 v-col-sm-4">
           <h2>
