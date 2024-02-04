@@ -38,7 +38,7 @@
         <h2>訓後作品</h2>
         <v-row>
           <v-col class="v-col-12 v-col-sm-6 v-col-md-4 text-center" v-for="item in items3" :key="item.href">
-            <v-btn :style="{ 'background-image': `url(${(item.image)})` }" :href="item.href" target="_blank"
+            <v-btn :style="{ 'background-image': `url('${(item.image)}'')` }" :href="item.href" target="_blank"
               :title="item.title" :icon="item.icon"
               style="width: 100%;height: 280px;    background-position: center; background-size: cover;">
             </v-btn>
@@ -52,6 +52,7 @@
 </template>
 <script setup>
 import { computed } from 'vue';
+import asd from '@/assets/learning/bear.png'
 
 const items = computed(() => {
   return [
@@ -65,12 +66,18 @@ const items = computed(() => {
 
 const items2 = computed(() => {
   return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/product/product.png', title: '個人履歷', text: '個人履歷Ssss' }
+    { href: 'https://andyeeeee.github.io/MyResume/', image: 'asd', title: '個人履歷', text: '個人履歷' }
   ]
 })
-const items3 = computed(() => {
-  return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/css.png', title: '個人履歷', text: '個人履歷' }
-  ]
-})
+
+const items3 = [
+  {
+    image: new URL('../assets/learning/bear.png', import.meta.url).href,
+    href: 'https://andyeeeee.github.io/MyResume/',
+    title: '個人履歷',
+    text: '個人履歷'
+  }
+]
+
+
 </script>
