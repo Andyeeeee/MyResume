@@ -98,19 +98,19 @@
     <section class="d-lg-none" id="link">
       <ul class="d-flex aboutme-resume " style="list-style: none;justify-content: space-around;">
         <li>
-          <a href="https://pda.104.com.tw/profile/share/209ahYJytk3jlA6EYDVPWrL3pCu0RxC2">
+          <a target="_blank" href="https://pda.104.com.tw/profile/share/209ahYJytk3jlA6EYDVPWrL3pCu0RxC2">
             <img src="../assets/aboutme/104.png" alt="104" title="104">
             <P>104</P>
           </a>
         </li>
         <li>
-          <a href="https://www.cakeresume.com/s--9u-BLsX5Qhllzs6FPFLu9Q--/10514f074">
+          <a target="_blank" href="https://www.cakeresume.com/s--9u-BLsX5Qhllzs6FPFLu9Q--/10514f074">
             <img src="../assets/aboutme/cakeresum.png" alt="cakeresume" title="cakeresume">
             <P>cakeresume</P>
           </a>
         </li>
         <li>
-          <a href="https://github.com/Andyeeeee">
+          <a target="_blank" href="https://github.com/Andyeeeee">
             <img src="../assets/aboutme/github.png" alt="github" title="github">
             <P>github</P>
           </a>
