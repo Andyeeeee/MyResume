@@ -75,7 +75,7 @@ const items3 = [
   {
     image: new URL('../assets/learning/bear.png', import.meta.url).href,
     href: 'https://andyeeeee.github.io/MyResume/',
-    title: '個人履歷',
+    title: '個人履歷asd',
     text: '個人履歷'
   }
 ]
