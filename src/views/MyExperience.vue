@@ -102,7 +102,7 @@ const items = computed(() => {
     {
       time: "2019/7~2019/8",
 
-      leftimg: 'src/assets/Experience/food.png',
+      leftimg: new URL('../assets/Experience/food.png', import.meta.url).href,
       company: '福和生鮮',
 
       position: '品管(實習)',
@@ -113,7 +113,7 @@ const items = computed(() => {
     {
       time: "202/4~2021/8",
 
-      leftimg: 'src/assets/Experience/food2.jpg',
+      leftimg: new URL('../assets/Experience/food2.jpg', import.meta.url).href,
       company: '宏遠國際餐飲',
 
       position: '衛管',
@@ -124,7 +124,7 @@ const items = computed(() => {
     {
       time: "2021/8~2022/2",
 
-      leftimg: 'src/assets/Experience/windows.jpg',
+      leftimg: new URL('../assets/Experience/windows.jpg', import.meta.url).href,
       company: '晶品窗簾',
 
       position: '業務',
@@ -140,7 +140,7 @@ const items2 = computed(() => {
     {
       time: "2022/3~2023/2",
 
-      leftimg: 'src/assets/Experience/uber.png',
+      leftimg: new URL('../assets/Experience/uber.png', import.meta.url).href,
       company: '優步',
 
       position: '外送員',
@@ -151,7 +151,8 @@ const items2 = computed(() => {
     {
       time: "2022/3~2021/8",
 
-      leftimg: 'src/assets/Experience/sutdent.png',
+      leftimg: new URL('../assets/Experience/sutdent.png', import.meta.url).href,
+
       company: '職訓(非工作經歷)',
 
       position: '學員',
@@ -162,7 +163,8 @@ const items2 = computed(() => {
     {
       time: "2023/11~2023/12",
 
-      leftimg: 'src/assets/Experience/woek.png',
+      leftimg: new URL('../assets/Experience/woek.png', import.meta.url).href,
+
       company: '喜福',
 
       position: '計時人員',
