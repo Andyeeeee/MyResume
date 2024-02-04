@@ -65,7 +65,7 @@ const items = computed(() => {
 
 const items2 = computed(() => {
   return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/product/product.png', title: '個人履歷', text: '個人履歷' }
+    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/product/product.png', title: '個人履歷', text: '個人履歷Ssss' }
   ]
 })
 const items3 = computed(() => {
