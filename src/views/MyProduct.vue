@@ -48,7 +48,6 @@
         </v-row>
       </section>
     </v-container>
-
   </div>
 </template>
 <script setup>
@@ -66,12 +65,12 @@ const items = computed(() => {
 
 const items2 = computed(() => {
   return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: ('src/assets/product/product.png'), title: '個人履歷', text: '個人履歷' }
+    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/product/product.png', title: '個人履歷', text: '個人履歷' }
   ]
 })
 const items3 = computed(() => {
   return [
-    { href: 'https://andyeeeee.github.io/MyResume/', image: ('src/assets/css.png'), title: '個人履歷', text: '個人履歷' }
+    { href: 'https://andyeeeee.github.io/MyResume/', image: 'src/assets/css.png', title: '個人履歷', text: '個人履歷' }
   ]
 })
 </script>
