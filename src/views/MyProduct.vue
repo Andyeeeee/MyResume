@@ -85,6 +85,12 @@ const items2 = [
     href: 'https://andyeeeee.github.io/MyResume/',
     title: '個人履歷',
     text: '個人履歷'
+  },
+  {
+    image: new URL('../assets/product/Ge Diao.png', import.meta.url).href,
+    href: 'https://andyeeeee.github.io/Ge-Diao/',
+    title: '製作靜態網站',
+    text: '製作靜態網站'
   }
 ]
 
