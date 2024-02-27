@@ -4,21 +4,6 @@
 
       <h1>作品集</h1>
 
-      <section class="in-school">
-
-        <h2>在訓期間作品</h2>
-        <v-row>
-          <v-col class="v-col-12 v-col-sm-6 v-col-md-4 text-center" v-for="item in items" :key="item.href">
-            <v-btn :style="{ 'background-image': `url(${item.image})` }" :href="item.href" target="_blank"
-              :title="item.title" :icon="item.icon"
-              style="width: 100%;height: 280px;    background-position: center; background-size: cover;">
-            </v-btn>
-            <br>
-            <p>{{ item.text }}</p>
-          </v-col>
-        </v-row>
-      </section>
-
       <section class="after-school">
         <h2>訓後作品</h2>
         <v-row>
@@ -32,6 +17,21 @@
           </v-col>
         </v-row>
       </section>
+
+      <section class="in-school">
+        <h2>在訓期間作品</h2>
+        <v-row>
+          <v-col class="v-col-12 v-col-sm-6 v-col-md-4 text-center" v-for="item in items" :key="item.href">
+            <v-btn :style="{ 'background-image': `url(${item.image})` }" :href="item.href" target="_blank"
+              :title="item.title" :icon="item.icon"
+              style="width: 100%;height: 280px;    background-position: center; background-size: cover;">
+            </v-btn>
+            <br>
+            <p>{{ item.text }}</p>
+          </v-col>
+        </v-row>
+      </section>
+
 
 
     </v-container>
