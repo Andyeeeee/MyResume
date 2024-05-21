@@ -60,14 +60,18 @@ const minT = ref(null)
 const weatherData = async () => {
   try {
     const weather = await axios.get('https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-EBDD970B-60A8-41FC-9B88-6982746FADEC&locationName=%E8%87%BA%E5%8C%97%E5%B8%82');
+    console.log("weather");
     console.log(weather);
     const weatherDescription = weather.data.records.location[0].weatherElement[0].time[0].parameter.parameterValue;
+    console.log("weatherDescription");
+    console.log(weatherDescription);
+    minT.value = weatherDescription
     const weathertime = weather.data.records.location[0].weatherElement[0].time[0].endTime;
     console.log(weatherDescription);
     console.log(weathertime);
     weatherImage.value = changeImg(weatherDescription, weathertime);
-    minT.value = weather.data.records.location[0].weatherElement[2].time[0].parameter.parameterName
-    console.log(minT);
+    // minT.value = weather.data.records.location[0].weatherElement[2].time[0].parameter.parameterName
+    // console.log(minT);
     console.log("最低溫");
   } catch (error) {
     console.log('資料抓取失敗', error);
@@ -260,4 +264,3 @@ const nextMonth = () => {
 };
 
 </script>
-

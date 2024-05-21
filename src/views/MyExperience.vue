@@ -122,7 +122,7 @@ const items = computed(() => {
       skill3: '負責處理客訴及行政文書處理',
     },
     {
-      time: "2021/8~2022/2",
+      time: "2021/8~2022/12",
 
       leftimg: new URL('../assets/Experience/windows.jpg', import.meta.url).href,
       company: '晶品窗簾',
@@ -138,7 +138,7 @@ const items = computed(() => {
 const items2 = computed(() => {
   return [
     {
-      time: "2022/3~2023/2",
+      time: "2023/1~2023/2",
 
       leftimg: new URL('../assets/Experience/uber.png', import.meta.url).href,
       company: '優步',
@@ -157,20 +157,20 @@ const items2 = computed(() => {
 
       position: '學員',
       skill1: '學習網頁前端相關技術',
-      skill2: 'HTML,CSS,JavaScript',
+      skill2: 'Vue3,Sass,jq,bootstrap',
       skill3: 'MongoDB,Node.js',
     },
     {
-      time: "2023/11~2023/12",
+      time: "2024/03~2023/04",
 
-      leftimg: new URL('../assets/Experience/woek.png', import.meta.url).href,
+      leftimg: new URL('../assets/Experience/Mass.png', import.meta.url).href,
 
-      company: '喜福',
+      company: '麥斯科技',
 
-      position: '計時人員',
-      skill1: '協助分類床單',
-      skill2: '協助燙枕頭套並整理',
-      skill3: '',
+      position: '網頁前端工程師',
+      skill1: '網頁切版',
+      skill2: '與平面設計師溝通討論',
+      skill3: '與後端工程師討論',
     }
   ]
 })
